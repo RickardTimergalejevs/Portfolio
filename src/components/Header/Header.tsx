@@ -1,10 +1,14 @@
 import Link from "next/link";
+import "./header.scss";
 
-const Header = () => {
+type Props = {
+  className: string;
+};
+
+const Header = ({ className }: Props) => {
   return (
-    <header>
+    <header className={className}>
       <nav>
-        <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact</Link>

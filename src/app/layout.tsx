@@ -1,8 +1,7 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.scss";
+import { libreWithText, texturina } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+      <body className={texturina.className}>
+        <Header className={libreWithText.className} />
         {children}
       </body>
     </html>
