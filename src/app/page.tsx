@@ -5,9 +5,13 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className={styles.name_container}>
-          <h1 className={styles.firstName}>Richard</h1>
-          <h2 className={styles.lastName}>Timergalejevs</h2>
+        <div className={styles.home_container}>
+          <div className={styles.name_container}>
+            <h1 className={styles.firstName}>Richard</h1>
+            <div className={styles.lastName_container}>
+              <h2 className={styles.lastName}>Timergalejevs</h2>
+            </div>
+          </div>
           <div className={styles.img_container}>
             <img className={styles.img} src="zeus.png" alt="Zeus" />
           </div>

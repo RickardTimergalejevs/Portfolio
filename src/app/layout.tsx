@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import type { Metadata } from "next";
 import "./globals.scss";
 import { libreWithText, texturina } from "./fonts";
+import Loader from "@/components/Loader/Loader";
 
 export const metadata: Metadata = {
   title: "Create Next App",
